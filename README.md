@@ -1,10 +1,10 @@
 # HealthGuard
 
-HealthGuard is an AI-powered early disease detection and patient support system built with Flask. It combines X-ray analysis, medical reporting, dashboards for different user roles, and chatbot-style assistance to help support early screening workflows.
+HealthGuard is an AI-powered early disease detection and patient support system built with Flask. It combines X-ray analysis, medical reporting, role-based dashboards, and chatbot-style assistance to support early screening workflows.
 
 ## Features
 - AI-based X-ray prediction with heatmap generation for explainability
-- Patient, doctor, admin, and Asha worker role-based dashboards
+- Patient, doctor, admin, and ASHA worker role-based dashboards
 - Secure login, registration, and profile management
 - Medical report generation in PDF format
 - Medicine recommendation and chatbot support
@@ -61,17 +61,32 @@ http://localhost:3000
 These credentials are defined in `app/config.py` for development:
 - Admin: `admin` / `admin123`
 - Doctor: `doctor` / `doctor123`
-- Asha worker: create through the signup page or project-specific setup
+- ASHA worker: create through the signup page or project-specific setup
 
 ## Notes
 - Python 3.11 is recommended for best compatibility with the current dependency set.
 - The project uses a SQLite database by default, so it runs locally without extra database setup.
 - If ML model loading is disabled during development, the UI can still be explored without the full TensorFlow workflow.
 
+## Upload to GitHub
+If you want to upload this project to your own GitHub repository, run these commands from the project folder:
+
+```powershell
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/<your-username>/<your-repository>.git
+git push -u origin main
+```
+
+If the remote repository already has a README or commit history, pull first to avoid conflicts:
+
+```powershell
+git pull origin main --allow-unrelated-histories
+git push -u origin main
+```
+
 ## Disclaimer
 HealthGuard is a decision-support project and is not a substitute for professional medical advice, diagnosis, or treatment.
- 
-<<<<<<< HEAD
-=======
 
->>>>>>> 80667f90446e06691b7f44a248f0e92181a63f9a
