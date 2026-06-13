@@ -71,3 +71,7 @@ These credentials are defined in `app/config.py` for development:
 ## Disclaimer
 HealthGuard is a decision-support project and is not a substitute for professional medical advice, diagnosis, or treatment.
  
+<<<<<<< HEAD
+=======
+
+>>>>>>> 80667f90446e06691b7f44a248f0e92181a63f9a
